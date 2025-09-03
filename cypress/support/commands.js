@@ -1,4 +1,11 @@
 
+Cypress.Commands.add('exception',() =>{
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        // handle the exception
+        console.error('Uncaught exception:', err)
+        return false // prevents Cypress from failing the test
+        })
+})
 
 Cypress.Commands.add('saucedemo',()=>{
 
@@ -11,6 +18,15 @@ Cypress.Commands.add('saucedemo',()=>{
             cy.get('#login-button').click()
         })
             
+    })    
+})
+
+Cypress.Commands.add('OLX',()=>{
+    cy.visit('https://www.olx.com.pk/').then(()=>{
+        cy.viewport('macbook-16')
+        // cy.get('#header-auth').find('a#login').click()
+        // cy.get('#username').type('test@test.com')
+        // cy.get('#password').type('test@test.com')
+        // cy.get('#login-button').click()
     })
-    
 })

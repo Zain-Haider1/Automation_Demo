@@ -4,7 +4,7 @@ describe('Check the Monthly maintenance schedule',()=>{
 
     it('Navigate to maintenance schedule',()=>{
         cy.visit('https://iesco.com.pk/')
-
+        cy.viewport('macbook-16')
         cy.get('.maximenuCKH.header_menu').find('div.maxiRoundedcenter').find('li.maximenuCK.item103.parent.level0').find('a.maximenuCK')
         .contains('Customer Services').click().then(()=>{
             cy.get('.maximenuCK2.first').find('ul.maximenuCK2').find('li.maximenuCK.item123.level1')
