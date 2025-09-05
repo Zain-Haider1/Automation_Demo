@@ -3,6 +3,7 @@ const LOCATIONS = [
     'Bahria Town Rawalpindi',
     'PWD Islamabad',
     'Islamabad', 
+    'Islamabad I-8 Markaz',
     
 ]
 

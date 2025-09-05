@@ -1,0 +1,14 @@
+{
+  "location": "Islamabad I-8 Markaz",
+  "cleanLocation": "islamabad_i8_markaz",
+  "totalProperties": 33,
+  "lastUpdated": "2025-09-05T13:03:59.575Z",
+  "sourceUrl": "https://www.olx.com.pk/i-8_g5001035/q-Office-for-Rent?filter=price_max_120000",
+  "files": {
+    "main": "properties.json",
+    "csv": "properties.csv",
+    "enhanced": "enhanced.json",
+    "statistics": "statistics.json",
+    "historical": "historical_2025-09-05T13-03-59-568Z.json"
+  }
+}

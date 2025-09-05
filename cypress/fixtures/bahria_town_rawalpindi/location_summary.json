@@ -1,0 +1,14 @@
+{
+  "location": "Bahria Town Rawalpindi",
+  "cleanLocation": "bahria_town_rawalpindi",
+  "totalProperties": 33,
+  "lastUpdated": "2025-09-05T12:56:26.598Z",
+  "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
+  "files": {
+    "main": "properties.json",
+    "csv": "properties.csv",
+    "enhanced": "enhanced.json",
+    "statistics": "statistics.json",
+    "historical": "historical_2025-09-05T12-56-26-587Z.json"
+  }
+}

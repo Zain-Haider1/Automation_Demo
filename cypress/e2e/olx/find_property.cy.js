@@ -1,5 +1,5 @@
 import { LOCATIONS, PROPERTY_TITLES } from '../../support/data'
-import { savePropertyDatabase, validateAndCleanData } from '../../support/database'
+import { organizeFilesByLocation, savePropertyDatabase, validateAndCleanData } from '../../support/database'
 
 // Helper functions for data extraction and validation
 const extractPropertyType = (title) => {
@@ -57,6 +57,24 @@ const generateHash = (text) => {
     return Math.abs(hash).toString(36)
 }
 
+const cleanContactNumber = (contactNumber) => {
+    if (!contactNumber || contactNumber === 'Not available') return 'Not available'
+    
+    // Remove common prefixes and clean the number
+    let cleaned = contactNumber
+        .replace(/^\+92-?/, '') // Remove +92- prefix
+        .replace(/^92-?/, '')   // Remove 92- prefix
+        .replace(/[^\d]/g, '')  // Remove all non-digits
+        .trim()
+    
+    // Add back the +92 prefix if it's a valid Pakistani number
+    if (cleaned.length >= 10 && cleaned.length <= 11) {
+        return `+92-${cleaned}`
+    }
+    
+    return contactNumber // Return original if not a valid format
+}
+
 describe('find properties',()=>{
     beforeEach(()=>{
         cy.exception()
@@ -67,7 +85,7 @@ describe('find properties',()=>{
         cy.get('button#moe-dontallow_button').should('be.visible').click()
 
         cy.get('.a29e4ea1').find('div._948d9e0a._0c7320c4._371e9918')
-
+        
         // Process each location sequentially using Cypress commands
         cy.wrap(LOCATIONS).each((location, locationIndex) => {
             cy.log(`\n🔍 Processing Location ${locationIndex + 1}/${LOCATIONS.length}: ${location}`)
@@ -129,6 +147,14 @@ describe('find properties',()=>{
                         // Extract price
                         const price = $listing.find('span.f83175ac').text().trim()
 
+                        // Extract contact number - must be captured immediately after price
+                        const rawContactNumber = $listing.find('span._511f6edc[aria-label="Listing phone number"]').text().trim() || 
+                                               $listing.find('div.d7c9511b span._511f6edc').text().trim() ||
+                                               $listing.find('span[aria-label="Listing phone number"]').text().trim() ||
+                                               'Not available'
+                        
+                        const contactNumber = cleanContactNumber(rawContactNumber)
+
                         // Extract location
                         const propertyLocation = $listing.find('span.f047db22[aria-label="Location"]').text().trim()
 
@@ -163,6 +189,9 @@ describe('find properties',()=>{
                                 location: propertyLocation || 'Not specified',
                                 propertyType: propertyType,
 
+                                // Contact Information
+                                contactNumber: contactNumber,
+
                                 // Property Details
                                 floor: floorInfo || 'Not specified',
                                 bedrooms: bedrooms || 'Not specified',
@@ -176,6 +205,7 @@ describe('find properties',()=>{
                                 titleHash: generateHash(title),
                                 locationHash: generateHash(propertyLocation),
                                 priceHash: generateHash(price),
+                                contactHash: generateHash(contactNumber),
 
                                 // Extraction Metadata
                                 extractedAt: new Date().toISOString(),
@@ -199,13 +229,14 @@ describe('find properties',()=>{
                         cy.log(`   📄 Description: ${property.description}`)
                         cy.log(`   💰 Price: ${property.price} (Numeric: ${property.priceNumeric})`)
                         cy.log(`   📍 Location: ${property.location}`)
+                        cy.log(`   📞 Contact: ${property.contactNumber}`)
                         cy.log(`   🏢 Property Type: ${property.propertyType}`)
                         cy.log(`   🏢 Floor: ${property.floor}`)
                         cy.log(`   🛏️ Bedrooms: ${property.bedrooms}`)
                         cy.log(`   🚿 Bathrooms: ${property.bathrooms}`)
                         cy.log(`   📐 Area: ${property.area}`)
                         cy.log(`   ⏰ Upload Time: ${property.uploadTime}`)
-                        cy.log(`   🔍 Duplication Hashes: T:${property.titleHash} L:${property.locationHash} P:${property.priceHash}`)
+                        cy.log(`   🔍 Duplication Hashes: T:${property.titleHash} L:${property.locationHash} P:${property.priceHash} C:${property.contactHash}`)
                         cy.log('   ' + '─'.repeat(60))
                     })
 
@@ -246,6 +277,38 @@ describe('find properties',()=>{
                     })
                 })
         })
+    })
+
+    it('organize existing files by location', () => {
+        cy.log('🗂️ Starting file organization process...')
+        
+        // Organize existing files into location-specific folders
+        organizeFilesByLocation()
+        
+        cy.log('✅ File organization completed!')
+        cy.log('📁 New folder structure:')
+        cy.log('   cypress/fixtures/')
+        cy.log('   ├── bahria_town_rawalpindi/')
+        cy.log('   │   ├── properties.json')
+        cy.log('   │   ├── properties.csv')
+        cy.log('   │   ├── enhanced.json')
+        cy.log('   │   ├── statistics.json')
+        cy.log('   │   ├── location_summary.json')
+        cy.log('   │   └── historical_*.json')
+        cy.log('   ├── pwd_islamabad/')
+        cy.log('   │   ├── properties.json')
+        cy.log('   │   ├── properties.csv')
+        cy.log('   │   ├── enhanced.json')
+        cy.log('   │   ├── statistics.json')
+        cy.log('   │   ├── location_summary.json')
+        cy.log('   │   └── historical_*.json')
+        cy.log('   └── islamabad/')
+        cy.log('       ├── properties.json')
+        cy.log('       ├── properties.csv')
+        cy.log('       ├── enhanced.json')
+        cy.log('       ├── statistics.json')
+        cy.log('       ├── location_summary.json')
+        cy.log('       └── historical_*.json')
     })
 
     it.skip('database operations and data management', () => {

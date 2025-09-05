@@ -1,0 +1,14 @@
+{
+  "location": "PWD Islamabad",
+  "cleanLocation": "pwd_islamabad",
+  "totalProperties": 33,
+  "lastUpdated": "2025-09-05T12:58:32.058Z",
+  "sourceUrl": "https://www.olx.com.pk/pwd-housing-scheme_g5001123/q-Office-for-Rent?filter=price_max_120000",
+  "files": {
+    "main": "properties.json",
+    "csv": "properties.csv",
+    "enhanced": "enhanced.json",
+    "statistics": "statistics.json",
+    "historical": "historical_2025-09-05T12-58-32-050Z.json"
+  }
+}

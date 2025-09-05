@@ -1,0 +1,46 @@
+{
+  "totalProperties": 33,
+  "extractionDate": "2025-09-05T12:56:26.595Z",
+  "priceRanges": {
+    "under50k": 19,
+    "under1lac": 14,
+    "under2lac": 0,
+    "above2lac": 0
+  },
+  "locations": {
+    "Bahria Town - Safari Villas": 1,
+    "Bahria Town - Civic Centre": 8,
+    "PWD Road": 1,
+    "Gulberg Greens": 1,
+    "Blue Area - Block R": 1,
+    "DHA Defence Phase 2": 3,
+    "Rawat": 1,
+    "Bahria Town Phase 8": 1,
+    "Hub Commercial": 1,
+    "Bahria Town Phase 7": 4,
+    "Bahria Paradise": 1,
+    "Bahria Business District": 1,
+    "Bahria Spring North": 1,
+    "Bahria Square Commercial": 1,
+    "G-11 Markaz": 2,
+    "G-11": 2,
+    "F-11": 1,
+    "E-11": 1,
+    "Faisal Town - F-18": 1
+  },
+  "uploadTimeDistribution": {
+    "hours": 4,
+    "days": 15,
+    "weeks": 14,
+    "months": 0
+  },
+  "propertyTypes": {
+    "office": 20,
+    "floor": 1,
+    "shop": 6,
+    "other": 2,
+    "hall": 4
+  },
+  "averagePrice": 46098,
+  "medianPrice": 40000
+}

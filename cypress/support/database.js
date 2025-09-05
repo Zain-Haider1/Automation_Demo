@@ -1,20 +1,23 @@
 // Database utility functions for property data management
 
 /**
- * Save property data to location-specific file
+ * Save property data to location-specific folder structure
  * @param {Array} propertyData - Array of property objects
- * @param {string} location - Search location (used for filename)
+ * @param {string} location - Search location (used for folder and filename)
  * @param {string} sourceUrl - Actual URL where data was scraped from
  * @param {string} basePath - Base path for saving files
  */
 export const savePropertyDatabase = (propertyData, location, sourceUrl, basePath = 'cypress/fixtures') => {
-    // Clean location name for filename (remove special characters)
+    // Clean location name for folder and filename (remove special characters)
     const cleanLocation = location.toLowerCase()
         .replace(/[^a-z0-9\s]/g, '') // Remove special characters
         .replace(/\s+/g, '_') // Replace spaces with underscores
         .trim()
     
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+    
+    // Create location-specific folder path
+    const locationFolder = `${basePath}/${cleanLocation}`
     
     // Add source URL to each property
     const dataWithSource = propertyData.map(property => ({
@@ -24,29 +27,132 @@ export const savePropertyDatabase = (propertyData, location, sourceUrl, basePath
         extractedAt: new Date().toISOString()
     }))
     
-    // Save as JSON with location-specific filename
-    const filename = `${cleanLocation}_properties.json`
-    cy.writeFile(`${basePath}/${filename}`, dataWithSource, 'utf8')
-    cy.log(`💾 Property data saved to ${filename}`)
+    // Save main properties file
+    cy.writeFile(`${locationFolder}/properties.json`, dataWithSource, 'utf8')
+    cy.log(`💾 Property data saved to ${cleanLocation}/properties.json`)
     
     // Save as CSV for easy viewing
     const csvData = convertToCSV(dataWithSource)
-    cy.writeFile(`${basePath}/${cleanLocation}_properties.csv`, csvData, 'utf8')
-    cy.log(`📊 Property data saved as CSV: ${cleanLocation}_properties.csv`)
+    cy.writeFile(`${locationFolder}/properties.csv`, csvData, 'utf8')
+    cy.log(`📊 Property data saved as CSV: ${cleanLocation}/properties.csv`)
     
     // Save enhanced version with metadata
     const enhancedData = addMetadata(dataWithSource)
-    cy.writeFile(`${basePath}/${cleanLocation}_enhanced.json`, enhancedData, 'utf8')
-    cy.log(`✨ Enhanced database saved: ${cleanLocation}_enhanced.json`)
+    cy.writeFile(`${locationFolder}/enhanced.json`, enhancedData, 'utf8')
+    cy.log(`✨ Enhanced database saved: ${cleanLocation}/enhanced.json`)
     
     // Generate and save statistics
     const stats = generateStatistics(enhancedData)
-    cy.writeFile(`${basePath}/${cleanLocation}_statistics.json`, stats, 'utf8')
-    cy.log(`📈 Property statistics saved: ${cleanLocation}_statistics.json`)
+    cy.writeFile(`${locationFolder}/statistics.json`, stats, 'utf8')
+    cy.log(`📈 Property statistics saved: ${cleanLocation}/statistics.json`)
     
     // Save with timestamp for historical tracking
-    cy.writeFile(`${basePath}/${cleanLocation}_${timestamp}.json`, dataWithSource, 'utf8')
-    cy.log(`🕒 Historical data saved: ${cleanLocation}_${timestamp}.json`)
+    cy.writeFile(`${locationFolder}/historical_${timestamp}.json`, dataWithSource, 'utf8')
+    cy.log(`🕒 Historical data saved: ${cleanLocation}/historical_${timestamp}.json`)
+    
+    // Create a summary file for the location
+    const locationSummary = {
+        location: location,
+        cleanLocation: cleanLocation,
+        totalProperties: dataWithSource.length,
+        lastUpdated: new Date().toISOString(),
+        sourceUrl: sourceUrl,
+        files: {
+            main: 'properties.json',
+            csv: 'properties.csv',
+            enhanced: 'enhanced.json',
+            statistics: 'statistics.json',
+            historical: `historical_${timestamp}.json`
+        }
+    }
+    
+    cy.writeFile(`${locationFolder}/location_summary.json`, locationSummary, 'utf8')
+    cy.log(`📋 Location summary saved: ${cleanLocation}/location_summary.json`)
+}
+
+/**
+ * Organize existing files into location-specific folders
+ * @param {string} basePath - Base path for fixtures directory
+ */
+export const organizeFilesByLocation = (basePath = 'cypress/fixtures') => {
+    cy.log('🗂️ Organizing files by location...')
+    
+    // Define location patterns and their clean names
+    const locationPatterns = {
+        'bahria_town_rawalpindi': 'Bahria Town Rawalpindi',
+        'pwd_islamabad': 'PWD Islamabad', 
+        'islamabad': 'Islamabad'
+    }
+    
+    // Process each location
+    Object.entries(locationPatterns).forEach(([cleanLocation, fullLocation]) => {
+        cy.log(`📁 Processing location: ${fullLocation}`)
+        
+        // Create location folder
+        const locationFolder = `${basePath}/${cleanLocation}`
+        
+        // Move main files
+        cy.task('fileExists', `${basePath}/${cleanLocation}_properties.json`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_properties.json`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/properties.json`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_properties.json → ${cleanLocation}/properties.json`)
+                })
+            }
+        })
+        
+        // Move CSV files
+        cy.task('fileExists', `${basePath}/${cleanLocation}_properties.csv`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_properties.csv`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/properties.csv`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_properties.csv → ${cleanLocation}/properties.csv`)
+                })
+            }
+        })
+        
+        // Move enhanced files
+        cy.task('fileExists', `${basePath}/${cleanLocation}_enhanced.json`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_enhanced.json`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/enhanced.json`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_enhanced.json → ${cleanLocation}/enhanced.json`)
+                })
+            }
+        })
+        
+        // Move statistics files
+        cy.task('fileExists', `${basePath}/${cleanLocation}_statistics.json`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_statistics.json`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/statistics.json`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_statistics.json → ${cleanLocation}/statistics.json`)
+                })
+            }
+        })
+        
+        // Move historical files - simplified approach
+        cy.task('fileExists', `${basePath}/${cleanLocation}_2025-09-05T08-56-07-018Z.json`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_2025-09-05T08-56-07-018Z.json`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/historical_${cleanLocation}_2025-09-05T08-56-07-018Z.json`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_2025-09-05T08-56-07-018Z.json → ${cleanLocation}/historical_${cleanLocation}_2025-09-05T08-56-07-018Z.json`)
+                })
+            }
+        })
+        
+        // Move other historical files if they exist
+        cy.task('fileExists', `${basePath}/${cleanLocation}_2025-09-05T11-13-39-618Z.json`).then((exists) => {
+            if (exists) {
+                cy.readFile(`${basePath}/${cleanLocation}_2025-09-05T11-13-39-618Z.json`, 'utf8').then((data) => {
+                    cy.writeFile(`${locationFolder}/historical_${cleanLocation}_2025-09-05T11-13-39-618Z.json`, data, 'utf8')
+                    cy.log(`   ✅ Moved: ${cleanLocation}_2025-09-05T11-13-39-618Z.json → ${cleanLocation}/historical_${cleanLocation}_2025-09-05T11-13-39-618Z.json`)
+                })
+            }
+        })
+    })
+    
+    cy.log('🎉 File organization completed!')
 }
 
 /**
@@ -58,9 +164,9 @@ export const convertToCSV = (data) => {
     if (!data || data.length === 0) return ''
     
     const headers = [
-        'Title', 'Description', 'Price', 'PriceNumeric', 'Location', 'PropertyType',
+        'Title', 'Description', 'Price', 'PriceNumeric', 'Location', 'ContactNumber', 'PropertyType',
         'Floor', 'Bedrooms', 'Bathrooms', 'Area', 'UploadTime', 'SourceURL',
-        'SearchLocation', 'ExtractedAt', 'TitleHash', 'LocationHash', 'PriceHash'
+        'SearchLocation', 'ExtractedAt', 'TitleHash', 'LocationHash', 'PriceHash', 'ContactHash'
     ]
     
     const csvContent = [
@@ -71,6 +177,7 @@ export const convertToCSV = (data) => {
             `"${property.price}"`,
             `"${property.priceNumeric || 0}"`,
             `"${property.location}"`,
+            `"${property.contactNumber || 'Not available'}"`,
             `"${property.propertyType || 'Unknown'}"`,
             `"${property.floor}"`,
             `"${property.bedrooms}"`,
@@ -82,7 +189,8 @@ export const convertToCSV = (data) => {
             `"${property.extractedAt || new Date().toISOString()}"`,
             `"${property.titleHash}"`,
             `"${property.locationHash}"`,
-            `"${property.priceHash}"`
+            `"${property.priceHash}"`,
+            `"${property.contactHash || ''}"`
         ].join(','))
     ].join('\n')
     
