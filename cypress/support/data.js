@@ -1,7 +1,7 @@
 // Location and Title arrays for property search
 const LOCATIONS = [
     'Bahria Town Rawalpindi',
-    'Rawalpindi',
+    'PWD Islamabad',
     'Islamabad', 
     
 ]
@@ -9,7 +9,7 @@ const LOCATIONS = [
 const PROPERTY_TITLES = [
     'Office for Rent',
     '',
-    'Commercial office for Rent',
+    'Commercial office for rent',
     'Office Space for Rent',
     'Warehouse'
     

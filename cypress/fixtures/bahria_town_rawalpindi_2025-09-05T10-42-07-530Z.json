@@ -14,14 +14,11 @@
     "titleHash": "gxbqr3",
     "locationHash": "176x8f",
     "priceHash": "nqmdij",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 1,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_sharedoffi_15000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "LG floor available for rent in bahria town phase 4 Civic centre reasonable rent",
@@ -38,86 +35,11 @@
     "titleHash": "cyug5b",
     "locationHash": "wvv8ih",
     "priceHash": "nuxjbs",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 2,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_lgfloorava_90000_bahri",
-    "dataVersion": "1.0"
-  },
-  {
-    "title": "Office For Rent In PWD Road",
-    "description": "Office For Rent In PWD Road",
-    "price": "Rs 35,000",
-    "priceNumeric": 35000,
-    "location": "PWD Road, Islamabad•",
-    "propertyType": "Office",
-    "floor": "",
-    "bedrooms": "",
-    "bathrooms": "",
-    "area": "",
-    "uploadTime": "1 day ago",
-    "titleHash": "ty7alq",
-    "locationHash": "woipl7",
-    "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
-    "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
-    "listingIndex": 3,
-    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_35000_pwdro",
-    "dataVersion": "1.0"
-  },
-  {
-    "title": "Hall For Rent On Main GT Road Rawat",
-    "description": "Hall For Rent On Main GT Road Rawat",
-    "price": "Rs 1 Lac",
-    "priceNumeric": 100000,
-    "location": "Rawat, Islamabad•",
-    "propertyType": "Hall",
-    "floor": "",
-    "bedrooms": "",
-    "bathrooms": "",
-    "area": "",
-    "uploadTime": "3 weeks ago",
-    "titleHash": "kvnphp",
-    "locationHash": "7hfuif",
-    "priceHash": "f9t7ya",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
-    "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
-    "listingIndex": 4,
-    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_hallforren_1_rawat",
-    "dataVersion": "1.0"
-  },
-  {
-    "title": "Fully Furnished & Serviced Private Offices",
-    "description": "Fully Furnished & Serviced Private Offices",
-    "price": "Rs 35,000",
-    "priceNumeric": 35000,
-    "location": "Blue Area - Block R, Islamabad•",
-    "propertyType": "Office",
-    "floor": "",
-    "bedrooms": "",
-    "bathrooms": "",
-    "area": "",
-    "uploadTime": "3 weeks ago",
-    "titleHash": "1zg54l",
-    "locationHash": "rd00vu",
-    "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
-    "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
-    "listingIndex": 5,
-    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_fullyfurni_35000_bluea",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Shop On First Floor Available For Rent",
@@ -134,14 +56,11 @@
     "titleHash": "wy00zu",
     "locationHash": "reidzo",
     "priceHash": "nqkgjy",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
-    "listingIndex": 6,
+    "listingIndex": 3,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_shoponfirs_12000_gulbe",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "SnS Solutions Offers FREE FURNISHED Co-Working Space With 1st Month @50% Off",
@@ -158,14 +77,74 @@
     "titleHash": "q64sky",
     "locationHash": "vzygu0",
     "priceHash": "nr3m5s",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
+    "listingIndex": 4,
+    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
+    "searchLocation": "Bahria Town Rawalpindi"
+  },
+  {
+    "title": "Office For Rent In PWD Road",
+    "description": "Office For Rent In PWD Road",
+    "price": "Rs 35,000",
+    "priceNumeric": 35000,
+    "location": "PWD Road, Islamabad•",
+    "propertyType": "Office",
+    "floor": "",
+    "bedrooms": "",
+    "bathrooms": "",
+    "area": "",
+    "uploadTime": "1 day ago",
+    "titleHash": "ty7alq",
+    "locationHash": "woipl7",
+    "priceHash": "nrpyp9",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
+    "source": "OLX Pakistan",
+    "listingIndex": 5,
+    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
+    "searchLocation": "Bahria Town Rawalpindi"
+  },
+  {
+    "title": "Fully Furnished & Serviced Private Offices",
+    "description": "Fully Furnished & Serviced Private Offices",
+    "price": "Rs 35,000",
+    "priceNumeric": 35000,
+    "location": "Blue Area - Block R, Islamabad•",
+    "propertyType": "Office",
+    "floor": "",
+    "bedrooms": "",
+    "bathrooms": "",
+    "area": "",
+    "uploadTime": "3 weeks ago",
+    "titleHash": "1zg54l",
+    "locationHash": "rd00vu",
+    "priceHash": "nrpyp9",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
+    "source": "OLX Pakistan",
+    "listingIndex": 6,
+    "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
+    "searchLocation": "Bahria Town Rawalpindi"
+  },
+  {
+    "title": "Hall For Rent On Main GT Road Rawat",
+    "description": "Hall For Rent On Main GT Road Rawat",
+    "price": "Rs 1 Lac",
+    "priceNumeric": 100000,
+    "location": "Rawat, Islamabad•",
+    "propertyType": "Hall",
+    "floor": "",
+    "bedrooms": "",
+    "bathrooms": "",
+    "area": "",
+    "uploadTime": "3 weeks ago",
+    "titleHash": "kvnphp",
+    "locationHash": "7hfuif",
+    "priceHash": "f9t7ya",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
+    "source": "OLX Pakistan",
     "listingIndex": 7,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_snssolutio_21000_dhade",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Ground Floor Shop Civic Center",
@@ -182,14 +161,11 @@
     "titleHash": "ipz0c",
     "locationHash": "wvv8ih",
     "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 8,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_groundfloo_35000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Ground floor shop available for rent in civic center phase 4 bahira town Rawalpindi",
@@ -206,14 +182,11 @@
     "titleHash": "97r08p",
     "locationHash": "wvv8ih",
     "priceHash": "ntty52",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 9,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_groundfloo_70000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office space available for rent in bahria town phase 4 civic center",
@@ -230,14 +203,11 @@
     "titleHash": "iex8t1",
     "locationHash": "wvv8ih",
     "priceHash": "ns8hbk",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 10,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officespac_43000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Bahria Town Phase 8 Shop For Rent",
@@ -254,14 +224,11 @@
     "titleHash": "7bb7uk",
     "locationHash": "7pqzih",
     "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 11,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_bahriatown_35000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Non furnished office space available for rent in bahria town phase 4 Civic centre",
@@ -278,14 +245,11 @@
     "titleHash": "rfjcm",
     "locationHash": "wvv8ih",
     "priceHash": "ns6kcz",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 12,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_nonfurnish_40000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Hall Available For Rent",
@@ -302,14 +266,11 @@
     "titleHash": "bg1a26",
     "locationHash": "dg99ra",
     "priceHash": "nta5jp",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 13,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_hallavaila_60000_hubco",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office Purpose One Bed Room Brand New Available For Rent",
@@ -326,14 +287,11 @@
     "titleHash": "i2bb6y",
     "locationHash": "m03x12",
     "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 14,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officepurp_35000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Beautiful office available for rent in Bahria Town Phase 7",
@@ -350,14 +308,11 @@
     "titleHash": "a5xbmi",
     "locationHash": "m03x12",
     "priceHash": "nrmrrm",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 15,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_beautifulo_30000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Beautiful brand new office available for rent in Bahria paradise commercial",
@@ -374,14 +329,11 @@
     "titleHash": "3fiy7a",
     "locationHash": "9c57i7",
     "priceHash": "ntty52",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 16,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_beautifulb_70000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Bahria Civic Center Open Space For Rent",
@@ -398,14 +350,11 @@
     "titleHash": "7cc7jw",
     "locationHash": "wvv8ih",
     "priceHash": "nuxjbs",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 17,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_bahriacivi_90000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Ground Floor Shop Available for Rent in Bahria Town Phase-7 Rawalpindi",
@@ -422,14 +371,11 @@
     "titleHash": "100bap",
     "locationHash": "m03x12",
     "priceHash": "nuxjbs",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 18,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_groundfloo_90000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "3side corner hall available for rent bahria town phase 8 rawalpindi",
@@ -446,14 +392,11 @@
     "titleHash": "pe8kvc",
     "locationHash": "1kbze",
     "priceHash": "pjz6kf",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 19,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_3sidecorne_110_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office Is Available For Rent OPPOSITE TMUC UNIVERSITY",
@@ -470,14 +413,11 @@
     "titleHash": "netk05",
     "locationHash": "psz9a6",
     "priceHash": "nrqlos",
-    "extractedAt": "2025-09-05T11:11:42.099Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 20,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeisav_36000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Semi Furnished office space available for rent in bahria town phase 4 civic center",
@@ -494,14 +434,11 @@
     "titleHash": "8wf3qn",
     "locationHash": "wvv8ih",
     "priceHash": "nrpyp9",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 21,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_semifurnis_35000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Shop Available For Rent In Phase 7 Bahria Town Rawalpindi",
@@ -518,14 +455,11 @@
     "titleHash": "muzb56",
     "locationHash": "m03x12",
     "priceHash": "ns6kcz",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 22,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_shopavaila_40000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "1500sft Hall In Civic Center Phase4 Bahria Town Rwp",
@@ -542,14 +476,11 @@
     "titleHash": "s772l7",
     "locationHash": "wvv8ih",
     "priceHash": "nudqqf",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 23,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_1500sfthal_80000_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Fully Furnished Exactive Office",
@@ -566,14 +497,11 @@
     "titleHash": "4dpvc3",
     "locationHash": "llorn3",
     "priceHash": "pjz6kf",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 24,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_fullyfurni_110_bahri",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office For Rent",
@@ -586,18 +514,15 @@
     "bedrooms": "",
     "bathrooms": "",
     "area": "",
-    "uploadTime": "4 hours ago",
+    "uploadTime": "3 hours ago",
     "titleHash": "bv8406",
     "locationHash": "je5285",
     "priceHash": "ntdchc",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 25,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_65000_g11ma",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office For Rent",
@@ -614,14 +539,11 @@
     "titleHash": "bv8406",
     "locationHash": "cxw1bp",
     "priceHash": "ntemge",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 26,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_67000_g11is",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Furnished office for rent in F11 markaz",
@@ -638,14 +560,11 @@
     "titleHash": "ff60wd",
     "locationHash": "f2qq6s",
     "priceHash": "nv0q9f",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 27,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_furnishedo_95000_f11is",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office for Rent G-11 Markaz, Islamabad | 425 Sq Ft",
@@ -658,18 +577,15 @@
     "bedrooms": "",
     "bathrooms": "",
     "area": "",
-    "uploadTime": "19 hours ago",
+    "uploadTime": "18 hours ago",
     "titleHash": "qjlo94",
     "locationHash": "je5285",
     "priceHash": "ntty52",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 28,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_70000_g11ma",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "1000 SQ, FT Office for Rent In DHA Phase 2",
@@ -686,14 +602,11 @@
     "titleHash": "700l9w",
     "locationHash": "vzygu0",
     "priceHash": "nta5jp",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 29,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_1000sqftof_60000_dhade",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office for rent available in E-11",
@@ -710,14 +623,11 @@
     "titleHash": "3obtyb",
     "locationHash": "h7lf1v",
     "priceHash": "nqkgjy",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 30,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_12000_e11is",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office For Rent in DHA Phase 2 3rd floor 1000 sq ft.",
@@ -734,14 +644,11 @@
     "titleHash": "enm8u3",
     "locationHash": "vzygu0",
     "priceHash": "nta5jp",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 31,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_60000_dhade",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Brand New Studio Office For Rent In Faisal Town Islamabad",
@@ -758,14 +665,11 @@
     "titleHash": "wfy0wk",
     "locationHash": "s4u3c7",
     "priceHash": "nrmrrm",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 32,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_brandnewst_30000_faisa",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   },
   {
     "title": "Office For Rent At G-11 Markaz",
@@ -782,13 +686,10 @@
     "titleHash": "mz69ho",
     "locationHash": "cxw1bp",
     "priceHash": "ntdchc",
-    "extractedAt": "2025-09-05T11:11:42.100Z",
+    "extractedAt": "2025-09-05T10:42:07.530Z",
     "source": "OLX Pakistan",
-    "searchLocation": "Bahria Town Rawalpindi",
-    "searchPropertyTitle": "Office for Rent",
     "listingIndex": 33,
     "sourceUrl": "https://www.olx.com.pk/bahria-town-rawalpindi_g5001213/q-Office-for-Rent?filter=price_max_120000",
-    "id": "prop_officeforr_65000_g11is",
-    "dataVersion": "1.0"
+    "searchLocation": "Bahria Town Rawalpindi"
   }
 ]
